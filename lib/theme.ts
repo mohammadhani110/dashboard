@@ -1,6 +1,5 @@
 // theme.ts
 import { createTheme } from "@mui/material/styles";
-import "@fontsource/poppins"; // Defaults to 400 weight
 
 const theme = createTheme({
   typography: {
