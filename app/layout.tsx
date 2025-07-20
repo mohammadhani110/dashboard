@@ -4,7 +4,7 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Dashboard App',
   description: 'Next.js Dashboard App',
-  generator: 'v0.dev',
+  generator: 'mh',
 }
 
 export default function RootLayout({

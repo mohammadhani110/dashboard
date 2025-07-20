@@ -1,4 +1,5 @@
 "use client"
+
 import {
   Box,
   Paper,
@@ -32,6 +33,7 @@ import {
 import RightSidebar from "./RightSidebar"
 import ContactCard from "./ContactCard";
 import LeadCard from "./LeadCard";
+import Header from "./Header";
 
 interface MainContentProps {
   handleDrawerToggle: () => void
@@ -52,7 +54,7 @@ export default function MainContent({ handleDrawerToggle }: MainContentProps) {
       }}
     >
       {/* Top Navigation */}
-      <AppBar
+      {/* <AppBar
         position="static"
         elevation={0}
         sx={{
@@ -160,9 +162,10 @@ export default function MainContent({ handleDrawerToggle }: MainContentProps) {
             </Button>
           </Box>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
+      <Header handleDrawerToggle={handleDrawerToggle} />
 
-      <Box sx={{ p: 2, display: "flex", flexDirection: "row", gap: 2 }}>
+      <Box sx={{ p: 2, display: "flex", flexDirection: { xs: "column", lg: "row" }, gap: 2 }}>
         <Stack sx={{ p: 2, flex: 1 }}>
           {/* Contact Card */}
           <ContactCard />

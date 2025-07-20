@@ -91,9 +91,9 @@ export default function RightSidebar() {
     </Stack>
   )
 
-  if (isMobile) {
-    return null // Hide right sidebar on mobile
-  }
+  // if (isMobile) {
+  //   return null // Hide right sidebar on mobile
+  // }
 
   return (
     <Box
